@@ -1,10 +1,10 @@
 //change the below code
 // the function below now only works with integers, change it to work with any type
 // also fill out the body
-
+template <typename T>
 class Calculator {
 private:
-    int num1, num2;
+    T num1, num2;
 
 public:
     Calculator(int n1, int n2) {
