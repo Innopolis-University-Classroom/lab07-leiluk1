@@ -12,10 +12,16 @@ public:
         num2 = n2;
     }
 
-    int add() { return 0; /*your code here*/ }
-    int subtract() { /*your code here*/ }
-    int multiply() { /*your code here*/ }
-    int divide() { /*your code here*/ }
+    int add() { return num1 + num2; }
+
+    int subtract() { return num1 - num2; }
+
+    int multiply() { return num1 * num2; }
+
+    int divide() {
+        if (num2 == 0) throw std::overflow_error("Division by zero!");
+        return num1 / num2;
+    }
 };
 
 
